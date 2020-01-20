@@ -1,0 +1,8 @@
+{
+	"Id": "mod_smtp",
+	"Name": "SMTP Module",
+	"Description" : "Send emails by using your preferred SMTP server",
+	"Website": "http://sinticbolivia.net",
+	"Author": "Sintic Bolivia",
+	"Version": "1.0"
+}

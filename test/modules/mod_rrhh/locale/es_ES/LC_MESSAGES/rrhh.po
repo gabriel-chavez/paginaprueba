@@ -1,0 +1,1033 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HHRR Moule\n"
+"POT-Creation-Date: 2016-11-04 00:54-0400\n"
+"PO-Revision-Date: 2016-11-04 00:54-0400\n"
+"Last-Translator: \n"
+"Language-Team: Sintic Bolivia <info@sinticbolivia.net>\n"
+"Language: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ../../..\n"
+
+#: ../../../functions.php:5
+msgid "Active"
+msgstr "Activo"
+
+#: ../../../functions.php:6
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: ../../../functions.php:7
+msgid "Closed"
+msgstr "Cerrado"
+
+#: ../../../admin.controller.php:8 ../../../controller.php:14
+#: ../../../controllers/admin.controller.studylevels.php:8
+#: ../../../controllers/admin.controller.announcements.php:9
+msgid "ID"
+msgstr ""
+
+#: ../../../admin.controller.php:9
+#: ../../../controllers/admin.controller.announcements.php:161
+#: ../../../controllers/admin.controller.announcements.php:243
+#: ../../../views/tab-my_cv.php:34 ../../../views/tab-registro_datos.php:8
+#: ../../../views/admin/announcements.applicants.php:56
+msgid "Firstname"
+msgstr "Nombres"
+
+#: ../../../admin.controller.php:10
+#: ../../../controllers/admin.controller.announcements.php:162
+#: ../../../controllers/admin.controller.announcements.php:245
+#: ../../../views/tab-my_cv.php:35
+#: ../../../views/admin/announcements.applicants.php:41
+msgid "Fathers Lastname"
+msgstr "Apellido del padre"
+
+#: ../../../admin.controller.php:11
+#: ../../../controllers/admin.controller.announcements.php:163
+#: ../../../controllers/admin.controller.announcements.php:247
+#: ../../../views/tab-my_cv.php:36
+#: ../../../views/admin/announcements.applicants.php:42
+msgid "Mothers Lastname"
+msgstr "Apellido de la madre"
+
+#: ../../../admin.controller.php:12
+#: ../../../controllers/admin.controller.announcements.php:164
+#: ../../../views/tab-my_cv.php:95 ../../../views/tab-registro_datos.php:25
+#: ../../../views/tab-registro_datos.php:32
+#: ../../../views/admin/announcements.applicants.php:59
+msgid "City"
+msgstr "Ciudad"
+
+#: ../../../admin.controller.php:13
+#: ../../../controllers/admin.controller.announcements.php:165
+#: ../../../views/tab-my_cv.php:96 ../../../views/tab-registro_datos.php:27
+#: ../../../views/tab-registro_datos.php:34
+#: ../../../views/admin/announcements.applicants.php:60
+msgid "Country"
+msgstr "Pais"
+
+#: ../../../admin.controller.php:14
+#: ../../../controllers/admin.controller.announcements.php:168
+#: ../../../views/tab-my_cv.php:37 ../../../views/tab-my_cv.php:200
+#: ../../../views/login.php:46 ../../../views/tab-registro_datos.php:52
+#: ../../../views/tab-referencia_laboral.php:17
+#: ../../../views/tab-referencia_laboral.php:93
+#: ../../../views/tab-ref_personal.php:17
+#: ../../../views/tab-ref_personal.php:93
+msgid "Email"
+msgstr ""
+
+#: ../../../admin.controller.php:17
+#: ../../../controllers/admin.controller.studylevels.php:12
+#: ../../../controllers/admin.controller.studylevels.php:13
+#: ../../../controllers/admin.controller.announcements.php:20
+#: ../../../views/emp-ref-row.php:16 ../../../views/pr-row.php:16
+#: ../../../views/ar-row.php:11 ../../../views/we-row.php:18
+#: ../../../views/we-row.php:19
+msgid "Edit"
+msgstr "Editar"
+
+#: ../../../admin.controller.php:18
+#: ../../../controllers/admin.controller.announcements.php:22
+#: ../../../views/emp-ref-row.php:20 ../../../views/pr-row.php:20
+#: ../../../views/ar-row.php:17 ../../../views/tab-registro_datos.php:91
+#: ../../../views/we-row.php:21 ../../../views/we-row.php:23
+msgid "Delete"
+msgstr "Borrar"
+
+#: ../../../on_enabled.php:4
+msgid "View Human Resource Menu"
+msgstr "Ver Menu de Recursos Humanos"
+
+#: ../../../on_enabled.php:5
+msgid "Manage Human Resources"
+msgstr "Administrar Recursos Humanos"
+
+#: ../../../init.php:31
+msgid "HHRR Management"
+msgstr "Administracion de RRHH"
+
+#: ../../../init.php:32
+msgid "Human Resource"
+msgstr "Recurso Humano"
+
+#: ../../../init.php:32 ../../../views/announcement.php:32
+#: ../../../views/profile.php:5
+msgid "index.php?mod=rrhh"
+msgstr ""
+
+#: ../../../init.php:33 ../../../controller.php:27
+#: ../../../views/profile.php:6 ../../../views/admin/announcements.new.php:4
+msgid "Announcements"
+msgstr "Convocatorias"
+
+#: ../../../init.php:33
+#: ../../../controllers/admin.controller.announcements.php:48
+#: ../../../controllers/admin.controller.announcements.php:54
+#: ../../../controllers/admin.controller.announcements.php:71
+#: ../../../controllers/admin.controller.announcements.php:77
+#: ../../../controllers/admin.controller.announcements.php:81
+#: ../../../controllers/admin.controller.announcements.php:103
+#: ../../../controllers/admin.controller.announcements.php:120
+#: ../../../controllers/admin.controller.announcements.php:430
+#: ../../../views/admin/announcements.applicants.php:7
+#: ../../../views/admin/announcements.new.php:157
+msgid "index.php?mod=rrhh&view=announcements.default"
+msgstr ""
+
+#: ../../../init.php:34
+#: ../../../controllers/admin.controller.studylevels.php:18
+#: ../../../views/admin/announcements.new.php:40
+msgid "Study Levels"
+msgstr "Niveles de Estudio"
+
+#: ../../../init.php:34
+#: ../../../controllers/admin.controller.studylevels.php:35
+#: ../../../controllers/admin.controller.studylevels.php:50
+#: ../../../controllers/admin.controller.studylevels.php:61
+#: ../../../controllers/admin.controller.studylevels.php:91
+#: ../../../views/admin/studylevels.new.php:21
+msgid "index.php?mod=rrhh&view=studylevels.default"
+msgstr ""
+
+#: ../../../controller.php:8 ../../../controller.php:101
+#: ../../../controller.php:158 ../../../controller.php:201
+#: ../../../controller.php:255 ../../../controller.php:432
+#: ../../../controller.php:480 ../../../controller.php:486
+#: ../../../controller.php:492 ../../../controller.php:498
+#: ../../../controller.php:533 ../../../controller.php:547
+#: ../../../controller.php:604
+msgid "index.php?mod=rrhh&view=login"
+msgstr ""
+
+#: ../../../controller.php:15
+#: ../../../controllers/admin.controller.announcements.php:10
+#: ../../../views/announcement.php:71
+#: ../../../views/admin/announcements.default.php:17
+#: ../../../views/admin/announcements.applicants.php:15
+#: ../../../views/admin/announcements.new.php:14
+msgid "Code"
+msgstr "Codigo"
+
+#: ../../../controller.php:16
+#: ../../../controllers/admin.controller.studylevels.php:9
+#: ../../../controllers/admin.controller.announcements.php:11
+#: ../../../views/tab-my_cv.php:194
+#: ../../../views/tab-referencia_laboral.php:11
+#: ../../../views/tab-ref_personal.php:11
+#: ../../../views/admin/announcements.default.php:16
+#: ../../../views/admin/announcements.applicants.php:40
+#: ../../../views/admin/announcements.new.php:25
+#: ../../../views/admin/announcements.new.php:44
+#: ../../../views/admin/studylevels.new.php:14
+msgid "Name"
+msgstr "Nombre"
+
+#: ../../../controller.php:17
+#: ../../../controllers/admin.controller.announcements.php:12
+#: ../../../views/admin/announcements.new.php:129
+msgid "Status"
+msgstr "Estado"
+
+#: ../../../controller.php:18
+#: ../../../controllers/admin.controller.announcements.php:13
+#: ../../../views/we-row.php:50 ../../../views/admin/announcements.new.php:137
+msgid "Start Date"
+msgstr "Fecha Inicio"
+
+#: ../../../controller.php:19
+#: ../../../controllers/admin.controller.announcements.php:14
+#: ../../../views/we-row.php:51 ../../../views/admin/announcements.new.php:141
+msgid "End Date"
+msgstr "Fecha Termino"
+
+#: ../../../controller.php:20
+#: ../../../controllers/admin.controller.announcements.php:16
+msgid "Creation Date"
+msgstr "Fecha Creacion"
+
+#: ../../../controller.php:23 ../../../views/admin/announcements.new.php:19
+msgid "View"
+msgstr "Ver"
+
+#: ../../../controller.php:36 ../../../controller.php:67
+msgid "index.php?mod=users"
+msgstr ""
+
+#: ../../../controller.php:56
+#, php-format
+msgid "Announcement - %s - %s"
+msgstr "Convocatoria - %s - %s"
+
+#: ../../../controller.php:70
+msgid "User Profile"
+msgstr "Perfil de Usuario"
+
+#: ../../../controller.php:151
+msgid "Your profile has been updated"
+msgstr "Su perfil ha sido actualizado"
+
+#: ../../../controller.php:152 ../../../controller.php:195
+#: ../../../controller.php:249 ../../../controller.php:389
+#: ../../../controller.php:595 ../../../controller.php:614
+#: ../../../views/profile.php:8
+msgid "index.php?mod=rrhh&view=profile"
+msgstr ""
+
+#: ../../../controller.php:184
+msgid "The academic record has been registered"
+msgstr "El registro academico fue guardado"
+
+#: ../../../controller.php:229
+msgid "Currently Working"
+msgstr "Actualmente trabajando"
+
+#: ../../../controller.php:236
+msgid "The work experience has been added"
+msgstr "La experiencia laboral fue adicionada"
+
+#: ../../../controller.php:241
+msgid "The work experience has been updated"
+msgstr "La experiencia laboral fue actualizada"
+
+#: ../../../controller.php:262
+msgid "The profile does not exists"
+msgstr "El perfil no existe"
+
+#: ../../../controller.php:277
+#: ../../../controllers/admin.controller.announcements.php:144
+#, php-format
+msgid "%s-%s-%s-cv.pdf"
+msgstr ""
+
+#: ../../../controller.php:285 ../../../controller.php:302
+#: ../../../controller.php:315 ../../../controller.php:339
+#: ../../../controller.php:353 ../../../controller.php:395
+#: ../../../controller.php:416 ../../../controller.php:434
+#: ../../../controller.php:606
+msgid "You are not logged in"
+msgstr "Usted no ha iniciado sesion"
+
+#: ../../../controller.php:309
+msgid "The academic record has been deleted"
+msgstr "El registro academico fue borrado"
+
+#: ../../../controller.php:347
+msgid "The work experience has been deleted"
+msgstr "La experiencia laboral ha sido borrada"
+
+#: ../../../controller.php:377
+msgid "The reference has been registered"
+msgstr "La referencia ha sido registrada"
+
+#: ../../../controller.php:382
+msgid "The reference has been updated"
+msgstr "La referencia ha sido actualizada"
+
+#: ../../../controller.php:442
+msgid "You already applied to this announcement"
+msgstr "Ya realizaste tu postulacion a esta convocatoria"
+
+#: ../../../controller.php:446 ../../../controller.php:465
+#: ../../../views/admin/announcements.new.php:17
+msgid "index.php?mod=rrhh&view=announcement&id="
+msgstr ""
+
+#: ../../../controller.php:461
+msgid "We have received your application to the announcement successfully."
+msgstr "Hemos recibido su postulacion satisfactoriamente"
+
+#: ../../../controller.php:479
+msgid "The document is empty"
+msgstr "El documento esta vacio"
+
+#: ../../../controller.php:485
+msgid "The email is empty"
+msgstr "El email esta vacio"
+
+#: ../../../controller.php:491
+msgid "The password is empty"
+msgstr "La contrase&ntilde;a esta vacia"
+
+#: ../../../controller.php:497
+msgid "You must to retype your password"
+msgstr "Necesita confirmar su contrase&ntilde;a"
+
+#: ../../../controller.php:504
+msgid "The username already exists, choose a new one"
+msgstr "E nombre de usuario ya existe"
+
+#: ../../../controller.php:511
+msgid "The user email already exists, choose a new one"
+msgstr "El email de usuario ya existe"
+
+#: ../../../controller.php:517
+msgid "The passwords does not match"
+msgstr "Las contraseñas no coinciden"
+
+#: ../../../controller.php:532
+msgid ""
+"Your user was registered correctly, please review your email for details"
+msgstr ""
+"El usuario fue registrado correctamente, porfavor revise su email para mas "
+"detalles"
+
+#: ../../../controller.php:564
+msgid "El texto de seguridad es invalido"
+msgstr ""
+
+#: ../../../controller.php:578
+msgid "login-error.html"
+msgstr ""
+
+#: ../../../controllers/admin.controller.studylevels.php:25
+msgid "Create New Study Level"
+msgstr "Creare Nuevo Nivel de Estudio"
+
+#: ../../../controllers/admin.controller.studylevels.php:34
+#: ../../../controllers/admin.controller.studylevels.php:49
+msgid "The study level identifier is invalid"
+msgstr "El identificador del nivel de estudio es invalido"
+
+#: ../../../controllers/admin.controller.studylevels.php:39
+msgid "Edit Study Level"
+msgstr "Editar Nivel de Estudio"
+
+#: ../../../controllers/admin.controller.studylevels.php:65
+msgid "The study level has been created"
+msgstr "El nivel de estudio ha sido creado"
+
+#: ../../../controllers/admin.controller.studylevels.php:70
+msgid "The study level has been updated"
+msgstr "El nivel de estudio ha sido actualizado"
+
+#: ../../../controllers/admin.controller.announcements.php:15
+msgid "Applicants"
+msgstr "Postulantes"
+
+#: ../../../controllers/admin.controller.announcements.php:21
+msgid "See Applicants"
+msgstr "Ver Postulantes"
+
+#: ../../../controllers/admin.controller.announcements.php:38
+msgid "New Announcement"
+msgstr "Nueva Convocatoria"
+
+#: ../../../controllers/admin.controller.announcements.php:47
+#: ../../../controllers/admin.controller.announcements.php:70
+msgid "Invalid announcement identifier"
+msgstr "Identificador de convocatoria invalido"
+
+#: ../../../controllers/admin.controller.announcements.php:53
+#: ../../../controllers/admin.controller.announcements.php:76
+msgid "The announcement does not exists"
+msgstr "La convocatoria no existe"
+
+#: ../../../controllers/admin.controller.announcements.php:62
+msgid "Edit Announcement"
+msgstr "Editar Convocatoria"
+
+#: ../../../controllers/admin.controller.announcements.php:80
+msgid "The announcement has been deleted"
+msgstr "La convocatoria ha sido borrada"
+
+#: ../../../controllers/admin.controller.announcements.php:102
+msgid "The announcement has been created"
+msgstr "La convocatoria ha sido creada"
+
+#: ../../../controllers/admin.controller.announcements.php:108
+msgid "The announcement has been updated"
+msgstr "La convocatoria ha sido actualizada"
+
+#: ../../../controllers/admin.controller.announcements.php:109
+msgid "index.php?mod=rrhh&view=announcements.edit&id="
+msgstr ""
+
+#: ../../../controllers/admin.controller.announcements.php:119
+msgid "The announcement identifier is invalid"
+msgstr "El identificador de convocatoria es invalido"
+
+#: ../../../controllers/admin.controller.announcements.php:122
+msgid "Announcement Applicants"
+msgstr "Postulantes a Convocatoria"
+
+#: ../../../controllers/admin.controller.announcements.php:166
+#: ../../../views/tab-my_cv.php:72 ../../../views/tab-my_cv.php:198
+#: ../../../views/tab-registro_datos.php:46
+#: ../../../views/tab-referencia_laboral.php:15
+#: ../../../views/tab-referencia_laboral.php:83
+#: ../../../views/tab-ref_personal.php:15
+#: ../../../views/tab-ref_personal.php:83
+#: ../../../views/admin/announcements.applicants.php:61
+msgid "Telephone"
+msgstr "Tel&eacute;fono"
+
+#: ../../../controllers/admin.controller.announcements.php:167
+#: ../../../views/tab-my_cv.php:199
+#: ../../../views/tab-referencia_laboral.php:87
+#: ../../../views/tab-ref_personal.php:87
+#: ../../../views/admin/announcements.applicants.php:62
+msgid "Cell phone"
+msgstr "Celular"
+
+#: ../../../controllers/admin.controller.announcements.php:169
+#: ../../../views/admin/announcements.applicants.php:63
+msgid "Score"
+msgstr "Puntaje"
+
+#: ../../../controllers/admin.controller.announcements.php:429
+msgid "The announcement has been closed"
+msgstr "La convocatoria ha sido cerrada"
+
+#: ../../../views/tab-formacion_academica.php:4
+msgid "Add New"
+msgstr "Adicionar Nuevo"
+
+#: ../../../views/tab-formacion_academica.php:9
+#: ../../../views/tab-formacion_academica.php:38
+msgid "Nivel de Formacion"
+msgstr ""
+
+#: ../../../views/tab-formacion_academica.php:10
+msgid "Centro Educativo"
+msgstr ""
+
+#: ../../../views/tab-formacion_academica.php:11
+#: ../../../views/tab-formacion_academica.php:55
+msgid "Titulo Obtenido"
+msgstr ""
+
+#: ../../../views/tab-formacion_academica.php:12
+msgid "Fecha Titulo"
+msgstr ""
+
+#: ../../../views/tab-formacion_academica.php:13
+msgid "Ciudad"
+msgstr ""
+
+#: ../../../views/tab-formacion_academica.php:14
+msgid "Pais"
+msgstr ""
+
+#: ../../../views/tab-formacion_academica.php:34
+msgid "Informacion Academica"
+msgstr ""
+
+#: ../../../views/tab-formacion_academica.php:49
+msgid "Centro de Estudios"
+msgstr ""
+
+#: ../../../views/tab-formacion_academica.php:61
+msgid "Fecha de Emision"
+msgstr ""
+
+#: ../../../views/tab-formacion_academica.php:67
+msgid "Ciudad de Obtencion de Titulo"
+msgstr ""
+
+#: ../../../views/tab-formacion_academica.php:73
+msgid "Pais de Obtencion de Titulo"
+msgstr ""
+
+#: ../../../views/tab-formacion_academica.php:75
+msgid "-- pais --"
+msgstr ""
+
+#: ../../../views/tab-formacion_academica.php:81
+#: ../../../views/announcement.php:124
+#: ../../../views/tab-experiencia_laboral.php:88
+#: ../../../views/tab-referencia_laboral.php:100
+#: ../../../views/tab-ref_personal.php:100
+#: ../../../views/admin/announcements.new.php:178
+msgid "Close"
+msgstr "Cerrar"
+
+#: ../../../views/tab-formacion_academica.php:82
+#: ../../../views/tab-registro_datos.php:76
+#: ../../../views/tab-experiencia_laboral.php:89
+#: ../../../views/tab-referencia_laboral.php:101
+#: ../../../views/tab-ref_personal.php:101
+#: ../../../views/admin/announcements.new.php:158
+#: ../../../views/admin/studylevels.new.php:22
+msgid "Save"
+msgstr "Guardar"
+
+#: ../../../views/tab-my_cv.php:18
+msgid "HOJA DE VIDA"
+msgstr ""
+
+#: ../../../views/tab-my_cv.php:46 ../../../views/tab-registro_datos.php:56
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+#: ../../../views/tab-my_cv.php:47 ../../../views/tab-registro_datos.php:71
+msgid "Document Number"
+msgstr "Numero de Documento"
+
+#: ../../../views/tab-my_cv.php:48 ../../../views/tab-registro_datos.php:73
+msgid "Issued in"
+msgstr "Expedido en"
+
+#: ../../../views/tab-my_cv.php:49
+msgid "Birthday"
+msgstr "Fecha de Nacimiento"
+
+#: ../../../views/tab-my_cv.php:58
+msgid "City Birth"
+msgstr "Ciudad de Nacimiento"
+
+#: ../../../views/tab-my_cv.php:59
+msgid "Country Birth"
+msgstr "Pais de Nacimiento"
+
+#: ../../../views/tab-my_cv.php:60
+msgid "City of Residence"
+msgstr "Ciudad de Residencia"
+
+#: ../../../views/tab-my_cv.php:61
+msgid "Country of Residence"
+msgstr "Pais de Residencia"
+
+#: ../../../views/tab-my_cv.php:70 ../../../views/tab-registro_datos.php:38
+msgid "Address"
+msgstr "Direccion"
+
+#: ../../../views/tab-my_cv.php:71 ../../../views/tab-registro_datos.php:42
+msgid "Zone"
+msgstr "Zona"
+
+#: ../../../views/tab-my_cv.php:73 ../../../views/tab-registro_datos.php:48
+#: ../../../views/tab-referencia_laboral.php:16
+#: ../../../views/tab-ref_personal.php:16
+msgid "Mobile Telephone"
+msgstr "Telefono Movil"
+
+#: ../../../views/tab-my_cv.php:195 ../../../views/announcement.php:83
+#: ../../../views/tab-referencia_laboral.php:12
+#: ../../../views/tab-referencia_laboral.php:44
+#: ../../../views/tab-ref_personal.php:12
+#: ../../../views/tab-ref_personal.php:44
+msgid "Company"
+msgstr "Empresa"
+
+#: ../../../views/tab-my_cv.php:196 ../../../views/announcement.php:84
+#: ../../../views/tab-referencia_laboral.php:13
+#: ../../../views/tab-referencia_laboral.php:50
+#: ../../../views/tab-ref_personal.php:13
+#: ../../../views/tab-ref_personal.php:50
+msgid "Position"
+msgstr "Cargo"
+
+#: ../../../views/tab-my_cv.php:197
+#: ../../../views/tab-referencia_laboral.php:14
+#: ../../../views/tab-referencia_laboral.php:56
+#: ../../../views/tab-ref_personal.php:14
+#: ../../../views/tab-ref_personal.php:56
+msgid "Relationship"
+msgstr "Parentesco"
+
+#: ../../../views/announcement.php:17
+msgid "Information"
+msgstr "Informacion"
+
+#: ../../../views/announcement.php:21
+msgid "Limit Date:"
+msgstr "Fecha Limite:"
+
+#: ../../../views/announcement.php:24
+msgid "Vacancies:"
+msgstr "Vacantes:"
+
+#: ../../../views/announcement.php:30
+msgid "Actions"
+msgstr "Acciones"
+
+#: ../../../views/announcement.php:32
+#: ../../../views/admin/studylevels.new.php:21
+msgid "Back"
+msgstr "Volver"
+
+#: ../../../views/announcement.php:34
+msgid "Apply Now"
+msgstr "Postular Ahora"
+
+#: ../../../views/announcement.php:67
+msgid "Apply to Announcement"
+msgstr "Postular a Convocatoria"
+
+#: ../../../views/announcement.php:73
+#: ../../../views/admin/announcements.applicants.php:16
+msgid "Announcement"
+msgstr "Convocatoria"
+
+#: ../../../views/announcement.php:77
+#: ../../../views/admin/announcements.new.php:64
+msgid "Specific Experience"
+msgstr "Experiencia Especifica"
+
+#: ../../../views/announcement.php:81
+msgid "General"
+msgstr ""
+
+#: ../../../views/announcement.php:82
+msgid "Specific"
+msgstr "Especifica"
+
+#: ../../../views/announcement.php:104
+msgid "Salary Pretension"
+msgstr "Pretencion Salarial"
+
+#: ../../../views/announcement.php:108
+msgid "Inmediate availability"
+msgstr "Disponibilidad Inmediata"
+
+#: ../../../views/announcement.php:109
+msgid "Yes"
+msgstr "Si"
+
+#: ../../../views/announcement.php:110
+msgid "No"
+msgstr ""
+
+#: ../../../views/announcement.php:111
+msgid "Days"
+msgstr "Dias"
+
+#: ../../../views/announcement.php:125
+msgid "Apply"
+msgstr "Postular"
+
+#: ../../../views/login.php:6
+msgid "Access Form"
+msgstr "Formulario de Acceso"
+
+#: ../../../views/login.php:11
+msgid "Docuemnt Identity"
+msgstr "Documento de Identidad"
+
+#: ../../../views/login.php:15 ../../../views/login.php:50
+msgid "Password"
+msgstr "Contrase&ntilde;a"
+
+#: ../../../views/login.php:19 ../../../views/login.php:58
+msgid "Secutiry Text"
+msgstr "Texto de Seguridad"
+
+#: ../../../views/login.php:21
+msgid "captcha.php?var=rrhh_captcha"
+msgstr ""
+
+#: ../../../views/login.php:26
+msgid "Login"
+msgstr ""
+
+#: ../../../views/login.php:29
+msgid "index.php?mod=users&view=recover_pwd"
+msgstr ""
+
+#: ../../../views/login.php:30
+msgid "No recuerdas tu contrase&ntilde;a"
+msgstr ""
+
+#: ../../../views/login.php:37
+msgid "Register Form"
+msgstr "Formulario de Registro"
+
+#: ../../../views/login.php:42
+msgid "Documento de Identidad"
+msgstr ""
+
+#: ../../../views/login.php:54
+msgid "Confirm your password"
+msgstr "Confirme su contrase&ntilde;a"
+
+#: ../../../views/login.php:60
+msgid "captcha.php?var=reg_captcha"
+msgstr ""
+
+#: ../../../views/login.php:65
+msgid "Register"
+msgstr "Registro"
+
+#: ../../../views/ar-row.php:19
+msgid "Are you sure to delete the acedemic record?"
+msgstr "Esta seguro de borrar el registro academico?"
+
+#: ../../../views/tab-registro_datos.php:12
+#: ../../../views/admin/announcements.applicants.php:57
+msgid "Fathers Name"
+msgstr "Apellido del padre"
+
+#: ../../../views/tab-registro_datos.php:16
+#: ../../../views/admin/announcements.applicants.php:58
+msgid "Mothers Name"
+msgstr "Apellido de la madre"
+
+#: ../../../views/tab-registro_datos.php:20
+msgid "Birth Date"
+msgstr "Fecha de Nacimiento"
+
+#: ../../../views/tab-registro_datos.php:24
+msgid "Place of birth"
+msgstr "Lugar de Nacimiento"
+
+#: ../../../views/tab-registro_datos.php:31
+msgid "Place of residence"
+msgstr "Lugar de Residencia"
+
+#: ../../../views/tab-registro_datos.php:58
+msgid "Identity Document"
+msgstr "Documento de Identidad"
+
+#: ../../../views/tab-registro_datos.php:62
+msgid "Passport"
+msgstr "Pasaporte"
+
+#: ../../../views/tab-registro_datos.php:66
+msgid "RUN"
+msgstr ""
+
+#: ../../../views/tab-registro_datos.php:80
+msgid "Fotografia"
+msgstr ""
+
+#: ../../../views/tab-registro_datos.php:91
+msgid "index.php?mod=rrhh&task=delete_image"
+msgstr ""
+
+#: ../../../views/tab-experiencia_laboral.php:4
+msgid "Add Work Experience"
+msgstr "Adicionar Experiencia Laboral"
+
+#: ../../../views/tab-experiencia_laboral.php:16
+msgid "Experiencia Laboral"
+msgstr ""
+
+#: ../../../views/tab-experiencia_laboral.php:20
+msgid "Empresa Institucion"
+msgstr ""
+
+#: ../../../views/tab-experiencia_laboral.php:26
+msgid "Sector"
+msgstr ""
+
+#: ../../../views/tab-experiencia_laboral.php:30
+msgid "Company Phone"
+msgstr "Telefono de la Empresa"
+
+#: ../../../views/tab-experiencia_laboral.php:36
+msgid "Cargo"
+msgstr ""
+
+#: ../../../views/tab-experiencia_laboral.php:42
+msgid "Principales Funciones"
+msgstr ""
+
+#: ../../../views/tab-experiencia_laboral.php:49
+msgid "Nro. de Dependientes"
+msgstr ""
+
+#: ../../../views/tab-experiencia_laboral.php:55
+msgid "Fecha Inicio"
+msgstr ""
+
+#: ../../../views/tab-experiencia_laboral.php:59
+msgid "Fecha Conclusion"
+msgstr ""
+
+#: ../../../views/tab-experiencia_laboral.php:65
+msgid "Superior Name"
+msgstr "Nombre del Superior"
+
+#: ../../../views/tab-experiencia_laboral.php:69
+msgid "Superior Position"
+msgstr "Cargo del Superior"
+
+#: ../../../views/tab-experiencia_laboral.php:75
+msgid "Actualmente Trabajando"
+msgstr ""
+
+#: ../../../views/tab-experiencia_laboral.php:81
+msgid "Motivo Desvinculacion"
+msgstr ""
+
+#: ../../../views/tab-referencia_laboral.php:4
+msgid "Add Work Reference"
+msgstr "Adicionar Experiencia Laboral"
+
+#: ../../../views/tab-referencia_laboral.php:34
+msgid "Work Reference"
+msgstr "Referencia Laboral"
+
+#: ../../../views/tab-referencia_laboral.php:38
+#: ../../../views/tab-ref_personal.php:38
+msgid "Full Name"
+msgstr "Nombre Completo"
+
+#: ../../../views/tab-ref_personal.php:4
+msgid "Add Personal Reference"
+msgstr "Adicionar Referencia Personal"
+
+#: ../../../views/tab-ref_personal.php:34
+msgid "Personal Reference"
+msgstr "Referencia Personal"
+
+#: ../../../views/we-row.php:10
+msgid "Company:"
+msgstr "Empresa:"
+
+#: ../../../views/we-row.php:11
+msgid "Cargo:"
+msgstr ""
+
+#: ../../../views/we-row.php:12
+msgid "Sector:"
+msgstr ""
+
+#: ../../../views/we-row.php:22
+msgid "Are you sure to delete the work experience?"
+msgstr "Esta seguro de borrar la experiencia laboral?"
+
+#: ../../../views/we-row.php:44
+msgid "Main Functions:"
+msgstr "Principales Funciones:"
+
+#: ../../../views/we-row.php:56
+msgid "Total Experiencia"
+msgstr ""
+
+#: ../../../views/we-row.php:73
+msgid "Decouplin Reason"
+msgstr "Motivo de Desvinculacion"
+
+#: ../../../views/profile.php:9
+msgid "My Profile"
+msgstr "Mi Perfil"
+
+#: ../../../views/profile.php:30
+msgid "Hoja de Vida"
+msgstr ""
+
+#: ../../../views/profile.php:32
+msgid "index.php?mod=rrhh&task=profile2pdf"
+msgstr ""
+
+#: ../../../views/profile.php:32 ../../../views/profile.php:33
+msgid "Download PDF"
+msgstr "Descargar PDF"
+
+#: ../../../views/admin/announcements.default.php:5
+msgid "Human Resource Announcement"
+msgstr "Convocatoria de Recurso Humano"
+
+#: ../../../views/admin/announcements.default.php:6
+msgid "index.php?mod=rrhh&view=announcements.new"
+msgstr ""
+
+#: ../../../views/admin/announcements.default.php:6
+#: ../../../views/admin/studylevels.default.php:7
+msgid "New"
+msgstr "Nuevo"
+
+#: ../../../views/admin/announcements.default.php:13
+#: ../../../views/admin/announcements.applicants.php:37
+msgid "Search..."
+msgstr ""
+
+#: ../../../views/admin/studylevels.default.php:6
+msgid "index.php?mod=rrhh&view=studylevels.new"
+msgstr ""
+
+#: ../../../views/admin/announcements.applicants.php:7
+msgid "Back to Announcements"
+msgstr "Volver a Convocatorias"
+
+#: ../../../views/admin/announcements.applicants.php:9
+#: ../../../views/admin/announcements.applicants.php:105
+#: ../../../views/admin/announcements.applicants.php:115
+msgid "Close Announcement"
+msgstr "Cerrar Convocatoria"
+
+#: ../../../views/admin/announcements.applicants.php:19
+#: ../../../views/admin/announcements.new.php:149
+msgid "Minimum Score"
+msgstr "Puntaje Minimo"
+
+#: ../../../views/admin/announcements.applicants.php:20
+#: ../../../views/admin/announcements.new.php:153
+msgid "Total Score"
+msgstr "Puntaje Total"
+
+#: ../../../views/admin/announcements.applicants.php:24
+msgid "index.php?mod=rrhh&task=announcements.export2excel&id="
+msgstr ""
+
+#: ../../../views/admin/announcements.applicants.php:25
+msgid "Export Score to Excel"
+msgstr "Exportar Puntaje a Excel"
+
+#: ../../../views/admin/announcements.applicants.php:28
+msgid "Export Curricular Filter"
+msgstr "Exportar Filtro Curricular"
+
+#: ../../../views/admin/announcements.applicants.php:55
+msgid "Num"
+msgstr "Nro"
+
+#: ../../../views/admin/announcements.applicants.php:81
+msgid "index.php?mod=rrhh&view=announcements.view_profile&id="
+msgstr ""
+
+#: ../../../views/admin/announcements.applicants.php:82
+msgid "View Profile"
+msgstr "Ver Perfil"
+
+#: ../../../views/admin/announcements.applicants.php:85
+msgid "index.php?mod=rrhh&view=announcements.see_curricular_filter&id="
+msgstr ""
+
+#: ../../../views/admin/announcements.applicants.php:86
+msgid "See Curricular Filter"
+msgstr "Ver Filtro Curricular"
+
+#: ../../../views/admin/announcements.applicants.php:109
+msgid "Message"
+msgstr "Mensaje"
+
+#: ../../../views/admin/announcements.applicants.php:114
+#: ../../../views/admin/announcements.new.php:157
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../../../views/admin/announcements.applicants.php:152
+msgid "index.php?mod=rrhh&task=announcements.see_curricular_filter&id="
+msgstr ""
+
+#: ../../../views/admin/announcements.new.php:29
+msgid "Description"
+msgstr "Descripcion"
+
+#: ../../../views/admin/announcements.new.php:32
+msgid "Add Media"
+msgstr "Adicionar Medio"
+
+#: ../../../views/admin/announcements.new.php:45
+msgid "Points"
+msgstr "Puntos"
+
+#: ../../../views/admin/announcements.new.php:68
+#: ../../../views/admin/announcements.new.php:99
+msgid "Desde"
+msgstr ""
+
+#: ../../../views/admin/announcements.new.php:69
+#: ../../../views/admin/announcements.new.php:100
+msgid "A"
+msgstr ""
+
+#: ../../../views/admin/announcements.new.php:70
+#: ../../../views/admin/announcements.new.php:101
+msgid "Puntos"
+msgstr ""
+
+#: ../../../views/admin/announcements.new.php:95
+msgid "General Experience"
+msgstr "Experiencia General"
+
+#: ../../../views/admin/announcements.new.php:126
+msgid "Options"
+msgstr "Opciones"
+
+#: ../../../views/admin/announcements.new.php:145
+msgid "Vacancies"
+msgstr "Vacantes"
+
+#: ../../../views/admin/announcements.new.php:171
+msgid "Upload Files"
+msgstr "Subir Archivos"
+
+#: ../../../views/admin/announcements.new.php:174
+msgid "index.php?mod=storage&view=uploader&tpl_file=module"
+msgstr ""
+
+#: ../../../views/admin/default.php:4
+msgid "Human Resource Management"
+msgstr "Administracion de Recurso Humano"
+
+#~ msgid "Mark"
+#~ msgstr "Marcar"
+
+#~ msgid "Company Industry:"
+#~ msgstr "Sector de la Empresa:"
+
+#~ msgid "Company Telephone:"
+#~ msgstr "Telefono de la Empresa"
+
+#~ msgid "Username"
+#~ msgstr "Usuario"

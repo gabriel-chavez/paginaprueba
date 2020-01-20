@@ -1,0 +1,5 @@
+REgistros
+==========
+documento de identidad
+contraseña
+confirmacion contraseña
