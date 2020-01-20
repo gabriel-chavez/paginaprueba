@@ -6,7 +6,7 @@
 			<a class="btn btn-warning" href="index.php?mod=rrhh&view=announcementspublic">Ver Convocatorias</a>
 			<hr />
 		</div>
-		<div class="col-xs-12 col-md-5 registro">
+		<div class="col-xs-12 col-md-5 registro">		
 			<h4><?php _e('Register Form', 'rrhh'); ?></h4>
 			<form id="form-register" action="" method="post">
 				<input type="hidden" name="mod" value="rrhh" />
@@ -21,7 +21,8 @@
 				</div>
 				<div class="form-group">
 					<label><?php _e('Password', 'rrhh'); ?></label>
-					<input type="password" name="pwd" value="" class="form-control" required="required" />
+					<input type="password" name="pwd" value="" class="form-control" required="required" id="inputPassword"/>
+					<span id="novalido" class="small" style="color:red;display:none">La contraseña debe contener mínimamente 8 caracteres, una letra mayúscula, minúscula y un caracter especial.</span>
 				</div>
 				<div class="form-group">
 					<label><?php _e('Confirm your password', 'rrhh'); ?></label>
@@ -35,7 +36,7 @@
 						</div>
 				</div>
 				<div class="form-group text-center">
-					<button type="submit" class="btn btn-default btn-green"><?php _e('Register', 'rrhh'); ?></button>
+					<button type="submit" class="btn btn-default btn-green" onclick="javascript:return validarComplejidadPass();"><?php _e('Register', 'rrhh'); ?></button>
 				</div>
 			</form>
 		</div>
@@ -82,4 +83,20 @@ jQuery(function()
 			return false;
 	});
 });
+
+$("#inputPassword").on("keypress",function(){
+	$("#novalido").hide();
+});
+function validarComplejidadPass(){
+	var constrasena=$("#inputPassword").val();
+	var regex=/^(?=\S*[a-z])(?=\S*[A-Z])(?=\S*\d)(?=\S*[^\w\s])\S{8,}$/;
+	if(regex.test(constrasena))
+	{
+		$("#novalido").hide();
+		return true;
+	}else{
+		$("#novalido").show();
+		return false;
+	}	
+}
 </script>

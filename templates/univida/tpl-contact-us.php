@@ -91,27 +91,27 @@ h3 span {
 			<div  class="bloque">
 				<b class="colorTitulo">SUCURSAL LA PAZ</b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Avenida Camacho N° 1415-1425, Edificio Crispieri Nardin, Planta Baja y Primer Piso, Zona Central.<br>
-				<span class="colorSubTitulo">Teléfono: </span>2151000 - 77727369<br>			
+				<span class="colorSubTitulo">Teléfono: </span>2151000<br>			
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">AGENCIA EL ALTO</b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Avenida Panorámica, S/N, Eficicio Teleférico Rojo, Piso 1, Local LC2  y LC3, Zona 16 de Julio.<br>					
-				<span class="colorSubTitulo">Teléfono: </span>2151000 - 77724801<br>
+				<span class="colorSubTitulo">Teléfono: </span>2151000<br>
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">SUCURSAL COCHABAMBA</b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Calle Tupiza N°1174, Zona Queru Queru.<br>
-				<span class="colorSubTitulo">Teléfono: </span>4114444 – 4114445 - 78898896<br>			
+				<span class="colorSubTitulo">Teléfono: </span>4114444 – 4114445<br>			
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">AGENCIA CHIMORE </b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Avenida Los Pinos Distrito 01, Lote 2 Manzano 01, Plaza Principal.<br>	
-				<span class="colorSubTitulo">Teléfono: </span>2151000 - 69415082<br>					
+				<span class="colorSubTitulo">Teléfono: </span>2151000<br>					
 			</div>
 			<div class="bloque">
 				<b class="colorTitulo">AGENCIA SACABA</b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Calle Comercio Nº S/N, entre Calles Granado y Padilla, Zona Central.<br>					
-				<span class="colorSubTitulo">Teléfono: </span>4114444 - 69415081<br>	
+				<span class="colorSubTitulo">Teléfono: </span>4114444<br>	
 			</div>
 		</div>
 		<div class="col-md-4">
@@ -119,32 +119,32 @@ h3 span {
 			<div  class="bloque">
 				<b class="colorTitulo">AGENCIA QUILLACOLLO </b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Avenida Albina Patiño N°520, Km 14,5 Esquina Pasaje Los Pinos, Edificio Centro Comercial Guadalupe II, Planta Baja,  Zona Oeste. <br>
-				<span class="colorSubTitulo">Teléfono: </span>4114444 - 69415079<br>	
+				<span class="colorSubTitulo">Teléfono: </span>4114444<br>	
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">SUCURSAL SANTA CRUZ</b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Calle Libertad, Nº153, Zona Casco Viejo.<br>	
-				<span class="colorSubTitulo">Teléfono: </span>3144444 – 78898893<br>							
+				<span class="colorSubTitulo">Teléfono: </span>3144444<br>							
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">AGENCIA SANTA CRUZ</b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Calle Villamontes y Tercer Anillo Interno, S/N, a media cuadra de la Calle Santos Dumont, Zona Sud Oeste.<br>									
-				<span class="colorSubTitulo">Teléfono: </span>78898893<br>
+				
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">AGENCIA MONTERO</b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Calle 1ro de Mayo, Edificio Parqueo Central, Planta Baja, S/N, entre calles Sucre y Ayacucho, Barrio Centro Historico.<br>				
-				<span class="colorSubTitulo">Teléfono: </span>3144444 - 77020356<br>
+				<span class="colorSubTitulo">Teléfono: </span>3144444<br>
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">SUCURSAL ORURO </b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Calle Adolfo Mier N°369 entre Calles Pagador y Potosí, Zona Central.<br>					
-				<span class="colorSubTitulo">Teléfono: </span>2151000 - 77141136<br>
+				<span class="colorSubTitulo">Teléfono: </span>2151000<br>
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">SUCURSAL POTOSÍ</b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Calle Bolívar S/N, entre Calles Ustarez y Pizarro, Planta Baja, Zona San Martín.<br>
-				<span class="colorSubTitulo">Teléfono: </span>2151000 - 69607481<br>			
+				<span class="colorSubTitulo">Teléfono: </span>2151000<br>			
 			</div>
 		</div>
 		<div class="col-md-4">
@@ -152,32 +152,32 @@ h3 span {
 			<div  class="bloque">
 				<b class="colorTitulo">SUCURSAL CHUQUISACA</b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Calle Loa N°682, Esquina Calle Ayacucho, Zona Central.<br>					
-				<span class="colorSubTitulo">Teléfono: </span>2151000 - 69670159<br>
+				<span class="colorSubTitulo">Teléfono: </span>2151000<br>
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">SUCURSAL TARIJA</b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Zona La Pampa Calle Ingavi N°E-156 entre calle Colón y Suipacha Edificio Coronado Planta Baja.<br>				
-				<span class="colorSubTitulo">Teléfono: </span>2151000 - 6115139<br>
+				<span class="colorSubTitulo">Teléfono: </span>2151000<br>
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">AGENCIA YACUIBA  </b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Calle Juan XXIII, N° 431, Planta Baja, entre Calles Ballivián y Santa Cruz, Zona Sur Oeste.<br>					
-				<span class="colorSubTitulo">Teléfono: </span>2151000 - 69340407<br>
+				<span class="colorSubTitulo">Teléfono: </span>2151000<br>
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">SUCURSAL TRINIDAD  </b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Calle Melitón Villavicencio, esquina Avenida del Mar frente a la Plazuela del Benemérito (o Plazuela Rosada), Zona San Vicente.<br>					
-				<span class="colorSubTitulo">Teléfono: </span>2151000 - 69656817<br>
+				<span class="colorSubTitulo">Teléfono: </span>2151000<br>
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">AGENCIA RIBERALTA  </b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Avenida Medardo Chávez N° 677, entre Avenida Bernardino Ochoa y Calle Dr. Martínez, Edificio Tokio, Planta Baja, Zona Central.<br>					
-				<span class="colorSubTitulo">Teléfono: </span>2151000 - 69656857<br>
+				<span class="colorSubTitulo">Teléfono: </span>2151000<br>
 			</div>
 			<div  class="bloque">
 				<b class="colorTitulo">SUCURSAL PANDO  </b> <br>
 				<span class="colorSubTitulo">Dirección: </span>Calle Beni N°56, entre Av. Tcnl. Emilio Fernández Molina y Avenida 9 de Febrero, Zona Central.<br>					
-				<span class="colorSubTitulo">Teléfono: </span>2151000 - 76103659
+				<span class="colorSubTitulo">Teléfono: </span>2151000
 			</div>
 		</div>
 	</div>

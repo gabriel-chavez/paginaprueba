@@ -1,6 +1,7 @@
 <?php
 class LT_ControllerRrhh extends SB_Controller
-{
+{	
+
 	public function task_default()
 	{
 		 if( !sb_is_user_logged_in('rrhh') )
@@ -618,11 +619,20 @@ class LT_ControllerRrhh extends SB_Controller
 	}
 	public function task_do_register()
 	{
+		
 		$username 		= SB_Request::getString('document');
 		$email			= SB_Request::getString('email');
 		$pwd			= SB_Request::getString('pwd');
 		$rpwd			= SB_Request::getString('rpwd');
 		$user_captcha	= SB_Request::getString('captcha');
+		$regex="/^(?=\S*[a-z])(?=\S*[A-Z])(?=\S*\d)(?=\S*[^\w\s])\S{8,}$/";
+		if(preg_match($regex, $pwd)){			
+		} else{			
+			sb_set_view('login');
+			SB_MessagesStack::AddMessage(__('La contraseña debe contener mínimamente 8 caracteres, una letra mayúscula, minúscula y un caracter especial.', 'rrhh'), 'error');
+			sb_redirect($redirect ? $redirect : SB_Route::_('index.php?mod=rrhh&view=authregister'));
+		}
+		
 		if( empty($username) )
 		{
 			sb_set_view('login');
@@ -677,10 +687,11 @@ class LT_ControllerRrhh extends SB_Controller
 			sb_redirect($redirect ? $redirect : SB_Route::_('index.php?mod=rrhh&view=authregister'));
 			return false;
 		}
+		$llave="UNIvida";
 		$role = sb_get_user_role_by_key('user');
 		$data = array(
 				'username'					=> $username,
-				'pwd'						=> md5($pwd),
+				'pwd'						=>  $this->encriptar_AES($pwd, $llave),
 				'email'						=> $email,
 				'status'					=> 'enabled',
 				'role_id'					=> $role->role_id,
@@ -743,8 +754,8 @@ class LT_ControllerRrhh extends SB_Controller
 		//sb_redirect($redirect ? $redirect : SB_Route::_('index.php?mod=rrhh&view=authlogin'));
 	}
 	public function task_do_login()
-	{
-		$username 	= SB_Request::getString('document');
+	{	
+		$username 	= addslashes(SB_Request::getString('document'));		
 		$pwd		= SB_Request::getString('pwd');
 		$captcha	= SB_Request::getString('captcha');
 		$dbh 		= SB_Factory::getDbh();
@@ -762,7 +773,9 @@ class LT_ControllerRrhh extends SB_Controller
 			SB_MessagesStack::AddMessage('Usuario o contrase&ntilde;a invalida', 'error');
 			sb_redirect($error_link);
 		}
-		if( $row->pwd != md5($pwd) )
+		$llave="UNIvida";		
+
+		if( $row->pwd != $this->encriptar_AES($pwd, $llave))
 		{
 			SB_Module::do_action('authenticate_error', $row, $username, $pwd);
 			SB_MessagesStack::AddMessage('Usuario o contrase&ntilde;a invalida', 'error');
@@ -1089,4 +1102,51 @@ class LT_ControllerRrhh extends SB_Controller
 		die();
 	}
 	*/
+	function encriptar_AES($plaintext, $password)
+	{					
+		$method = 'aes-256-cbc';		
+		$key = substr(hash('sha256', $password, true), 0, 32);			
+		$iv = chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0);	
+		$encrypted = base64_encode(openssl_encrypt($plaintext, $method, $key, OPENSSL_RAW_DATA, $iv));
+		return $encrypted;
+	}
+	function desencriptar_AES($encrypted_data_hex, $key)
+	{
+		// $td = mcrypt_module_open(MCRYPT_RIJNDAEL_128, '', MCRYPT_MODE_CBC, '');
+		// $iv_size_hex = mcrypt_enc_get_iv_size($td)*2;
+		// $iv = pack("H*", substr($encrypted_data_hex, 0, $iv_size_hex));
+		// $encrypted_data_bin = pack("H*", substr($encrypted_data_hex, $iv_size_hex));
+		// mcrypt_generic_init($td, $key, $iv);
+		// $decrypted = mdecrypt_generic($td, $encrypted_data_bin);
+		// mcrypt_generic_deinit($td);
+		// mcrypt_module_close($td);
+		// return $decrypted;
+		$plaintext = $encrypted_data_hex;
+		$password = '3sc3RLrpd17';
+
+		// CBC has an IV and thus needs randomness every time a message is encrypted
+		$method = 'aes-256-cbc';
+
+		// Must be exact 32 chars (256 bit)
+		// You must store this secret random key in a safe place of your system.
+		$key = substr(hash('sha256', $password, true), 0, 32);
+	
+
+		// Most secure key
+		//$key = openssl_random_pseudo_bytes(openssl_cipher_iv_length($method));
+
+		// IV must be exact 16 chars (128 bit)
+		$iv = chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0);
+
+		// Most secure iv
+		// Never ever use iv=0 in real life. Better use this iv:
+		// $ivlen = openssl_cipher_iv_length($method);
+		// $iv = openssl_random_pseudo_bytes($ivlen);
+
+		// av3DYGLkwBsErphcyYp+imUW4QKs19hUnFyyYcXwURU=
+
+		// My secret message 1234
+		$decrypted = openssl_decrypt(base64_decode($encrypted), $method, $key, OPENSSL_RAW_DATA, $iv);
+		return $decrypted;
+	}
 }

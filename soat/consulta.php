@@ -41,7 +41,7 @@
 
             <p>A continuación usted  puede consultar si el vehículo cuenta con la cobertura del seguro  SOAT  haciendo clic en la siguiente pestaña.</p>
 
-            <a href="http://soat.univida.bo:9097/UNIVidaNetSOATClienteFinal/Modulos_/Cliente/ConsultasVerificacionSoat/wfObtener" target="_blank" class="btn02">Verificar vigencia SOAT</a>
+            <a href="https://soat.univida.bo:9097/UNIVidaNetSOATClienteFinal/Modulos_/Cliente/ConsultasVerificacionSoat/wfObtener" target="_blank" class="btn02">Verificar vigencia SOAT</a>
 
             <?php if(date('Y') == 2017){?>
             <a href="http://consortium.alianza.com.bo/unividasoat/Home" target="_blank" class="btn02">Verificar vigencia 2017</a>

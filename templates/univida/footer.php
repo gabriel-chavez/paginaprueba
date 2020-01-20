@@ -17,13 +17,14 @@ $about_us = LT_HelperContent::GetPageBySlug('acerca-de-nosotros');
 		margin-top:0px;
 	}
 	</style>
-	<div class="divHorarios">
+	<!-- <div class="divHorarios">
 		<div class="container content">
 			<div class="row">
 				Horarios de atención de lunes a viernes en todas nuestras Sucursales, Agencias y Oficina Nacional: 8:30 a 12:30 - 14:30 a 18:30			
 			</div>
 		</div>
-	</div>
+	</div> -->
+	<br>
 	<div class="purchase">
 		<div class="container content">
 			<div class="row">

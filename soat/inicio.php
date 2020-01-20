@@ -97,7 +97,7 @@
                     <span class="bxIcoD"></span>
                     Comprobante SOAT
                 </a></li> -->
-                <li><a target="_blank" href="http://soat.univida.bo:9097/UNIVidaNetSOATClienteFinal/Modulos_/Cliente/Login/wfLoginCliente">
+                <li><a target="_blank" href="https://soat.univida.bo:9097/UNIVidaNetSOATClienteFinal/Modulos_/Cliente/Login/wfLoginCliente">
                     <span class="bxIcoH"></span>
                     Modificar Datos
                 </a></li>

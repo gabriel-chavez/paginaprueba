@@ -11,19 +11,22 @@ defined('LT_ADMIN') or die();
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 	<link rel="stylesheet" href="<?php print TEMPLATE_URL ?>/css/login.css" />
 	<script src="<?php print BASEURL; ?>/js/jquery.min.js"></script>
-	<script src="<?php print TEMPLATE_URL ?>/js/login.js"></script>
+  <script src="<?php print TEMPLATE_URL ?>/js/login.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  
+
 </head>
 <body <?php lt_body_class(); ?>>
 <div class="cont">
   	<div class="demo">
-    	<div class="login">
+    	<div class="login">      
     		<?php if( defined('SITE_LOGO')): ?>
     		<div><img src="<?php print UPLOADS_URL; ?>/<?php print SITE_LOGO; ?>" style="max-width:100%;" /></div>
     		<?php else: ?>
       		<div class="login__check"></div>
       		<?php endif; ?>
       		<div class="login__form">
-      			<form id="form-login" action="<?php print SB_Route::_('login.php'); ?>" method="post">
+            <form id="form-login" action="<?php print SB_Route::_('login.php'); ?>" method="post">          
       				<input type="hidden" name="mod" value="users" />
 					<input type="hidden" name="task" value="do_login" />
 					<?php if( isset($_SERVER['HTTP_REFERER']) ): ?>
@@ -40,7 +43,10 @@ defined('LT_ADMIN') or die();
 	            			<path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
 	          			</svg>
 	          			<input type="password" name="pwd" class="login__input pass" placeholder="<?php print SBText::_('Password', 'lb'); ?>"/>
-	        		</div>
+              </div>    
+              <br>     
+              <br>
+              <div class="g-recaptcha" data-sitekey="6Lf8YMgUAAAAAB14FpTJvDVJkKUwIAjfTa83EsJd"></div>
 	        		<button type="submit" class="login__submit"><?php print SBText::_('Sign in', 'lb'); ?></button>
 	        		<p class="login__signup">
 	        			<?php print SBText::_("Don't have an account?", 'lb'); ?> &nbsp;

@@ -3,7 +3,34 @@ require_once MOD_USERS_DIR . SB_DS . 'controllers' . SB_DS . 'base.controller.ph
 class LT_ControllerUsers extends LT_ControllerUsersBase
 {
 	public function task_do_login()
-	{
+	{		
+		//$recaptcha = $_POST["g-recaptcha-response"];
+		$recaptcha 	= SB_Request::getString('g-recaptcha-response');		
+		$url = 'https://www.google.com/recaptcha/api/siteverify';
+		$data = array(
+			'secret' => '6Ldn6MYUAAAAALTqLrJmYi3d4UW-oLvJNKuX0YG3',
+			'response' => $recaptcha
+		);
+		$options = array(
+			'http' => array (
+				'method' => 'POST',
+				'content' => http_build_query($data)
+			)
+		);
+		$context  = stream_context_create($options);
+		$verify = file_get_contents($url, false, $context);
+		$captcha_success = json_decode($verify);
+		
+		if ($captcha_success->success) {
+			$this->_login();
+		} else {
+			// Eres un robot!
+		}
+			
+		/**** */
+		
+	}
+	public function _login(){
 		$username 	= SB_Request::getString('username');
 		$pwd		= SB_Request::getString('pwd');
 		$captcha	= SB_Request::getString('captcha');
@@ -23,7 +50,8 @@ class LT_ControllerUsers extends LT_ControllerUsersBase
 			SB_MessagesStack::AddMessage('Usuario o contrase&ntilde;a invalida', 'error');
 			sb_redirect($error_link);
 		}
-		if( $row->pwd != md5($pwd) )
+		$llave="UNIvida";
+		if( $row->pwd != $this->encriptar_AES($pwd, $llave))
 		{
 			SB_Module::do_action('authenticate_error', $row, $username, $pwd);
 			SB_MessagesStack::AddMessage('Usuario o contrase&ntilde;a invalida', 'error');
@@ -119,11 +147,13 @@ class LT_ControllerUsers extends LT_ControllerUsersBase
 		$rpwd = SB_Request::getString('rpwd');
 		if( $pwd != $rpwd )
 		{
-			SB_MessagesStack::AddMessage(SBText::_('Las contrase&ntilde;as no coinciden.'), 'error');
+			SB_MessagesStack::AddMessage(SBText::_('Las contrase&ntilde;as no coinciden!!!!!!!!!!!.'), 'error');
 			sb_redirect(SB_Route::_('index.php?mod=users&view=recover_pwd&hash='.$hash));
 		}
+		$llave="UNIvida";
+		
 		sb_update_user_meta($row->user_id, '_recover_pwd_hash', null);
-		$dbh->Update('users', array('pwd' => md5($pwd)), array('user_id' => $row->user_id));
+		$dbh->Update('users', array('pwd' => $this->encriptar_AES($pwd, $llave)), array('user_id' => $row->user_id));
 		SB_MessagesStack::AddMessage(SBText::_('Tu contrase&ntilde;a fue actualizada correctamente.'), 'success');
 		SB_Module::do_action('users_password_updated', $row, $pwd);
 		sb_redirect(SB_Route::_('index.php?mod=users'));
@@ -237,9 +267,10 @@ class LT_ControllerUsers extends LT_ControllerUsersBase
 			rename(TEMP_DIR . SB_DS . $image_file, $user_dir . SB_DS . $image_file);
 		}
 		*/
+		$llave="UNIvida";
 		if( !empty($pwd) )
 		{
-			$data['pwd'] = md5($pwd);
+			$data['pwd'] = $this->encriptar_AES($pwd, $llave);
 		}
 		$dbh->Update('users', $data, array('user_id' => $user->user_id));
 		//sb_update_user_meta($user_id, '_observations', $observations);
@@ -316,10 +347,11 @@ class LT_ControllerUsers extends LT_ControllerUsersBase
 		{
 			return false;
 		}
+		$llave="UNIvida";
 		$role = sb_get_user_role_by_key('user');
 		$data = array(
 				'username'					=> $username,
-				'pwd'						=> md5($pwd),
+				'pwd'						=> $this->encriptar_AES($pwd, $llave),
 				'email'						=> $email,
 				'status'					=> 'enabled',
 				'role_id'					=> $role->role_id,
@@ -330,5 +362,31 @@ class LT_ControllerUsers extends LT_ControllerUsersBase
 		$id = sb_insert_user($data);
 		SB_MessagesStack::AddMessage(__('Your user was registered correctly, please review your email for details', 'users'), 'success');
 		sb_redirect($redirect ? $redirect : SB_Route::_('index.php?mod=users'));
+	}
+	function encriptar_AES($plaintext, $password)
+	{
+		
+		$method = 'aes-256-cbc';
+
+		$key = substr(hash('sha256', $password, true), 0, 32);
+	
+
+		$iv = chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0) . chr(0x0);
+
+	
+		$encrypted = base64_encode(openssl_encrypt($plaintext, $method, $key, OPENSSL_RAW_DATA, $iv));
+		return $encrypted;
+	}
+	public function desencriptar_AES($encrypted_data_hex, $key)
+	{
+		$td = mcrypt_module_open(MCRYPT_RIJNDAEL_128, '', MCRYPT_MODE_CBC, '');
+		$iv_size_hex = mcrypt_enc_get_iv_size($td)*2;
+		$iv = pack("H*", substr($encrypted_data_hex, 0, $iv_size_hex));
+		$encrypted_data_bin = pack("H*", substr($encrypted_data_hex, $iv_size_hex));
+		mcrypt_generic_init($td, $key, $iv);
+		$decrypted = mdecrypt_generic($td, $encrypted_data_bin);
+		mcrypt_generic_deinit($td);
+		mcrypt_module_close($td);
+		return $decrypted;
 	}
 }

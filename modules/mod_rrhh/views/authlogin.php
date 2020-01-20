@@ -4,7 +4,7 @@
 	<div class="row form-group-sm">
 		<div class="col-xs-12 col-md-4 col-md-offset-4 registro2">
 			<h4><?php _e('Access Form', 'rrhh'); ?></h4>
-			<form action="" method="post">
+			<form action="" method="post" on>				
 				<input type="hidden" name="mod" value="rrhh" />
 				<input type="hidden" name="task" value="do_login" />
 				<div class="form-group">
@@ -13,7 +13,8 @@
 				</div>
 				<div class="form-group">
 					<label><?php _e('Password', 'rrhh'); ?></label>
-					<input type="password" name="pwd" value="" class="form-control" />
+					<input type="password" name="pwd" value="" class="form-control"  />
+					
 				</div>
 				<div class="form-group">
 					<label><?php _e('Secutiry Text', 'rrhh'); ?></label>
@@ -23,7 +24,7 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<button class="btn btn-default btn-green" type="submit"><?php _e('Login', 'uv'); ?></button>
+					<button class="btn btn-default btn-green" type="submit" ><?php _e('Login', 'uv'); ?></button>
 				</div>
 				<div class="form-group">
 					<a href="<?php print SB_Route::_('index.php?mod=rrhh&view=recover_pwd'); ?>">
@@ -43,4 +44,5 @@ jQuery(function()
 			return false;
 	});
 });
+
 </script>

@@ -142,9 +142,12 @@ class SB_Application extends SB_Object
 		$module_dir		= MODULES_DIR . SB_DS . 'mod_'.$mod;
 		$class_prefix 	= defined('LT_ADMIN') ? 'LT_AdminController' : 'LT_Controller';
 		$file_prefix	= defined('LT_ADMIN') ? 'admin.' : '';
+	
 		if( !is_dir($module_dir) )
 		{
-			die('The module "'.$mod.'" does not exists.');
+			//die('The module "'.$mod.'" does not exists.');
+		//	die(SB_Route::_('index.php'));
+			sb_redirect(SB_Route::_('index.php'));
 		}
 		if( !defined('LT_ADMIN') )
 		{

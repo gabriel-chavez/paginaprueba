@@ -69,6 +69,7 @@ class SB_Request
 	public static function getString($var, $default = null)
 	{
 		$string = trim(self::getVar($var, $default));
+		$string=strip_tags($string);
 		return $string;
 		//return addslashes($string);
 	}
@@ -85,6 +86,7 @@ class SB_Request
 	public static function getTimeStamp($var, $default = null)
 	{
 		$value = self::getString($var, $default);
+	
 		if( !$value )
 			return $default;
 		return strtotime(str_replace('/', '-', $value));

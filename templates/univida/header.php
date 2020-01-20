@@ -198,7 +198,7 @@ if(isset($_GET["mod"]))
 						</a>
 						<?php endif; ?>
 					</li>
-				</ul>-->
+				</ul>-->				
 				<?php lt_show_content_menu('navegacion_'.LANGUAGE, array('class' => 'nav navbar-nav', 'sub_menu_class' => 'dropdown-menu')); ?>
 			</div>
 		</div>

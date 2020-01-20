@@ -155,7 +155,7 @@ class LT_Article extends SB_ORMObject
 		
 		$visible = SB_Module::do_action('content_is_visible', $visible, $this);
 		//var_dump($visible);
-		return $visible;
+		return true;
 	}
 	public function TheTitle($max_length = -1)
 	{

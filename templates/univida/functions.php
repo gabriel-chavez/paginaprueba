@@ -69,8 +69,9 @@ class LT_TemplateUnivida
 	}
 	protected function DoLogin()
 	{
+		
 		$dbh 	= SB_Factory::getDbh();
-		$ci 	= SB_Request::getString('ci');
+		$ci 	= addslashes(SB_Request::getString('ci'));
 		$pass 	= SB_Request::getString('pass');
 		$user_captcha = SB_Request::getString('captcha');
 		$query 	= "SELECT u.* ".

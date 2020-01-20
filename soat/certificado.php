@@ -42,7 +42,7 @@
 
             <p>Usted puede  obtener el comprobante SOAT electrónico haciendo clic en la siguiente pestaña</p>
 
-            <a href="http://soat.univida.bo:9097/UNIVidaNetSOATClienteFinal/Modulos_/Cliente/Login/wfLoginCliente" target="_blank" class="btn02">Obtener Comprobante SOAT</a>
+            <a href="https://soat.univida.bo:9097/UNIVidaNetSOATClienteFinal/Modulos_/Cliente/Login/wfLoginCliente" target="_blank" class="btn02">Obtener Comprobante SOAT</a>
 
             <?php if(date('Y') == 2017){?>
             <a href="http://consortium.alianza.com.bo/unividasoat/Init" target="_blank" class="btn02">Obtener Formulario 2017</a>

@@ -29,6 +29,7 @@ ob_start();
 .template .panel-body img{position:absolute;top:0;right:0;bottom:0;left:0;}
 </style>
 <div id="content" class="">
+
 	<div class="wrap">
 		<?php print SB_MessagesStack::ShowMessages(); ?>
 		<h2><?php print SBText::_('Templates'); ?></h2>

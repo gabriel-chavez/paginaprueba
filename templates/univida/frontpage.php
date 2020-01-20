@@ -112,7 +112,7 @@ lt_get_header();
 								
 						</a>
 					</div>
-					 <img class="js-video-button" id="video_uif" width="0" height="0" data-channel="video" data-video-url="images/IMG_3770.mp4" />
+					<!-- <img class="js-video-button" id="video_uif" width="0" height="0" data-channel="video" data-video-url="images/SpotConcursoUIF.mp4" /> -->
 				</div>
 			</div>
 		</div>

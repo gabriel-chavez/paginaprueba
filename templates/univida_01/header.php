@@ -41,19 +41,7 @@
 				</h1>
 			</div>	
 			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav pull-right">
-					<li>
-						<?php if( !sb_is_user_logged_in() ): ?>
-						<a href="<?php print SB_Route::_('index.php?mod=users&view=login'); ?>">
-							<span data-hover="<?php _e('Ingreso', 'uv'); ?>"><?php _e('Ingreso', 'uv'); ?></span>
-						</a>
-						<?php else: ?>
-						<a href="<?php print SB_Route::_('index.php?mod=users&task=logout'); ?>">
-							<span data-hover="<?php _e('Cerrar sesion', 'uv'); ?>"><?php _e('Cerrar sesion', 'uv'); ?></span>
-						</a>
-						<?php endif; ?>
-					</li>
-				</ul>
+				
 				<?php lt_show_content_menu('navegacion_'.LANGUAGE, array('class' => 'nav navbar-nav', 'sub_menu_class' => 'dropdown-menu')); ?>
 			</div>
 		</div>

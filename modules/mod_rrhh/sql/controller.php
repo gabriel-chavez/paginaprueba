@@ -664,7 +664,7 @@ class LT_ControllerRrhh extends SB_Controller
 			$this->task_logout();
 		}
 		if( sb_is_user_logged_in('rrhh') )
-		{
+		{			
 			sb_redirect(SB_Route::_('index.php?mod=rrhh&view=profile'));
 		}
 	}
